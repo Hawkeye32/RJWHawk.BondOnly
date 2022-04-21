@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MTBBeastPatch.cs" />
     <Compile Include="Harmony.cs" />
     <Compile Include="RJWPatch_would_fuck.cs" />
     <Compile Include="VariousDefOf.cs" />

@@ -26,24 +26,30 @@ namespace RJWHawk.BondOnly
 			Ideo ideo = fucker.Ideo;
 			if (ideo == null)
 			{
+				Log.Message("test1");
 				return;
 			}
 			if (!fucked.IsAnimal())
 			{
 				return;
 			}
-			Pawn_RelationsTracker animalrelations = fucker.relations;
-			if (animalrelations != null && !animalrelations.DirectRelationExists(PawnRelationDefOf.Bond, fucked))
+			if (ideo.HasPrecept(RJWHawk.BondOnly.VariousDefOf.Bestiality_BondOnly))	
 			{
-				if (ideo.HasPrecept(RJWHawk.BondOnly.VariousDefOf.Bestiality_BondOnly))
+				Log.Message("test2");
+				Pawn_RelationsTracker animalrelations = fucker.relations;
+				if (animalrelations != null && !animalrelations.DirectRelationExists(PawnRelationDefOf.Bond, fucked))
 				{
+					Log.Message("test3");
 					__result *= 2f;
 				}
 				else
-				{
-					__result *= 0.05f;
-				}
+                {
+					Log.Message("test4");
+					__result *= 0.1f;
+                }
+			
 			}
+			
 		}
 	}
 }

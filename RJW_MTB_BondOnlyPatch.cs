@@ -22,7 +22,7 @@ public static class RJW_Patch_ChancePerHour_Bestiality
 	{
 		if (ideo.HasPrecept(VariousDefOf.Bestiality_BondOnly))
 		{
-			return 0.1f;
+			return 0.5f;
 		}
 		return 5f;
 	}

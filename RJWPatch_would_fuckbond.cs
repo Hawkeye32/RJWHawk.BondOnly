@@ -37,7 +37,7 @@ namespace RJWHawk.BondOnly
 			{
 				Log.Message("test2");
 				Pawn_RelationsTracker animalrelations = fucker.relations;
-				if (animalrelations != null && !animalrelations.DirectRelationExists(PawnRelationDefOf.Bond, fucked))
+				if (animalrelations != null && animalrelations.DirectRelationExists(PawnRelationDefOf.Bond, fucked))
 				{
 					Log.Message("test3");
 					__result *= 2f;

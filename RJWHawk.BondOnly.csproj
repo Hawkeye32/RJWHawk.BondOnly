@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="RJW_MTB_BondOnlyPatch.cs" />
     <Compile Include="Harmony.cs" />
-    <Compile Include="RJWPatch_would_fuck.cs" />
+    <Compile Include="RJWPatch_would_fuckbond.cs" />
     <Compile Include="VariousDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

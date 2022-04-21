@@ -36,13 +36,13 @@ namespace RJWHawk.BondOnly
 			if (ideo.HasPrecept(RJWHawk.BondOnly.VariousDefOf.Bestiality_BondOnly))	
 			{
 				Pawn_RelationsTracker animalrelations = fucker.relations;
-				if (animalrelations != null && animalrelations.DirectRelationExists(PawnRelationDefOf.Bond, fucked))
+				if (animalrelations != null && !animalrelations.DirectRelationExists(PawnRelationDefOf.Bond, fucked))
 				{
-					__result *= 2f;
+					__result *= 0.1f;
 				}
 				else
                 {
-					__result *= 0.1f;
+					__result *= 2f;
                 }
 			
 			}
